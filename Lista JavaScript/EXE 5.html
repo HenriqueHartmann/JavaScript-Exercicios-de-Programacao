@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5</title>
+    <script language="JavaScript" type="text/javascript">
+        function calcular() {
+            var garoto = document.getElementById('garoto').value;
+            var garota = document.getElementById('garota').value;
+            var tempofilme = 200;
+            if (garota >=0 && garoto >=0) {
+                var resultado1 = tempofilme - garoto;
+                var resultado2 = tempofilme - garota;
+                var textinho1 = ' O garoto ficou acordado por ';
+                var textinho2 = ' a garota ficou acordada por ';
+                var textinho3 = ' minutos ';
+                var texto = textinho1 + resultado1 + textinho3 + textinho2 + resultado2 + textinho3;
+                alert(texto);
+            }else{
+                alert("Valor inválido");
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Tempo de sono de cada um:</h1>
+<h2>Garoto</h2>
+<input type="number" id="garoto" value="" required>
+<h2>Garota</h2>
+<input type="number" id="garota" value="" required>
+<input type="submit" value="Calcular" onclick="calcular()">
+</body>
+</html>
