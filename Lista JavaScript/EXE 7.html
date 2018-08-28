@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7</title>
+    <script language="JavaScript" type="text/javascript">
+        function calcular() {
+            var valorgasto = 150;
+            var valoraserarrecadado = 350;
+            var saquinhosdepipoca = 250;
+            var conta = (valoraserarrecadado + valorgasto) / saquinhosdepipoca;
+            var texto = 'Vender por ';
+            var reais = ' reais';
+            var resultado = texto + conta + reais;
+
+            alert(resultado);
+        }
+    </script>
+</head>
+<body>
+<h1>Festa dos Terceirões</h1>
+<h3>Valor gasto com itens: 150 reais</h3>
+<h3>Valor a ser arrecadado: 350 reais</h3>
+<h3>Quantidade de saquinhos de pipoca: 250</h3>
+<input type="submit" value="Calcular" onclick="calcular()">
+</body>
+</html>
