@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10</title>
+    <script language="JavaScript" type="text/javascript">
+        function calcular() {
+            var pessoas = document.getElementById('pessoas').value;
+            var musica = 1200;
+            var conta = Math.floor((pessoas / musica));
+            var texto = ' música(s)';
+            var resultado = conta + texto;
+            alert(resultado);
+        }
+    </script>
+</head>
+<body>
+<input type="number" id="pessoas">
+<input type="submit" value="Calcular" onclick="calcular()">
+</body>
+</html>

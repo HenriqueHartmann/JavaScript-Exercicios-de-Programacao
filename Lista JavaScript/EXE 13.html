@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13</title>
+    <script language="JavaScript" type="text/javascript">
+        function calcular() {
+            var passos = document.getElementById('passos').value;
+            var tempo = (document.getElementById('tempo').value) * 60;
+            var distancia = 300000;
+            var conta = distancia / passos;
+            var conta2 = tempo / conta;
+            var texto = ' passos';
+            var texto2 = ' e cada passo dura ';
+            var texto3 = ' segundos';
+            var resultado = conta + texto + texto2 + conta2 + texto3;
+            alert(resultado);
+        }
+    </script>
+</head>
+<body>
+<h2>Quantos passos leva para completar o trajeto:</h2>
+<input type="number" id="passos">
+<h2>tempo em minutos que dura o trajeto:</h2>
+<input type="number" id="tempo">
+<input type="submit" value="Calcular" onclick="calcular()">
+</body>
+</html>
