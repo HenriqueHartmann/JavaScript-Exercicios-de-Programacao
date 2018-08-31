@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>14</title>
+    <script language="JavaScript" type="text/javascript">
+        function calcular() {
+            var valor1 = document.getElementById('val1').value;
+            var valor2 = document.getElementById('val2').value;
+            var var1 = document.getElementById('val1').value;
+            var var2 = document.getElementById('val2').value;
+            var var0 = '';
+            var0 = var1;
+            var1 = var2;
+            var2 = var0;
+            var virgula = ",";
+            var texto1 = " var1 Antes: ";
+            var texto2 = " var2 Antes: ";
+            var texto3 = " var1 Depois: ";
+            var texto4 = " var2 Depois: ";
+            alert(texto1 + valor1 + virgula + texto2 + valor2 + virgula + texto3 + var1 + virgula + texto4 + var2);
+
+        }
+    </script>
 </head>
 <body>
-    
+<h3>Var 1</h3>
+<input type="text" id="val1" value="">
+<h3>Var 2</h3>
+<input type="text" id="val2" value="">
+<input type="submit" value="Calcular" onclick="calcular()">
 </body>
 </html>
